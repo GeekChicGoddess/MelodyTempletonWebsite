@@ -1,10 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Macondo');
 
-#welcome::after {
+body::after {
     content: "";
     background: url("../img/mud_maid.jpg");
-    opacity: 0.6;
+    opacity: 0.5;
     top: 0;
     left: 0;
     bottom: 0;
@@ -29,10 +29,10 @@ ul.nav li a {
 #fog {
     margin-top: 5em;
     background-color: #fff;
-    background: -webkit-linear-gradient(left,rgba(255,255,255,.1),rgba(255,255,255,.6)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(right,rgba(255,255,255,.1),rgba(255,255,255,.6)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(right,rgba(255,255,255,.1),rgba(255,255,255,.6)); /*Fx 3.6-15*/
-    background: linear-gradient(to right, rgba(255,255,255,.1), rgba(255,255,255,.6));
+    background: -webkit-linear-gradient(left,rgba(255,255,255,.2),rgba(255,255,255,.8)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(right,rgba(255,255,255,.2),rgba(255,255,255,.8)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right,rgba(255,255,255,.2),rgba(255,255,255,.8)); /*Fx 3.6-15*/
+    background: linear-gradient(to right, rgba(255,255,255,.2), rgba(255,255,255,.8));
     height: 25em;
     border-radius: 30%;
 
@@ -48,3 +48,140 @@ ul.nav li a {
     font-size: 2em;
     padding-left: 2em;
 }
+
+
+.backcontainer {
+    background-color: #EEEDF3;
+    padding-left: 18%;
+}
+
+h3 a {
+    margin-left: -35%;
+}
+
+#resume {
+    font-family: Calibri;
+}
+
+.backcontainerresume {
+    background-color: #EEEDF3;
+    margin-top: 5%;
+    height: 40em;
+}
+
+#details {
+    margin-top: 4em;
+    margin-left: 1em;
+    margin-right: .5em;
+}
+
+#profilePic {
+    margin-top: 10%;
+    padding-left: 9%;
+}
+
+#profilePic img {
+    height: 10%;
+    border-radius: 50%;
+}
+
+#profilePicMobile img {
+    display: none;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+#detailsContact {
+    padding-left: 3em;
+}
+
+i {
+    margin-left: .5em;
+}
+
+#detailsContact a  {
+    text-decoration: none;
+}
+
+#profCrow {
+
+    margin-top: 5%;
+    margin-left: 25%;
+    font-size: 1.3em;
+}
+
+#stars h4{
+    padding-left: .5em;
+
+}
+
+@media screen and (max-width: 760px) {
+
+    .mainnav {
+        display: block!important;
+        text-align: center;
+    }
+
+    .mainnav li {
+
+        font-size: .6em;
+    }
+    #insidefog {
+        padding-top: 2em;
+    }
+
+    .backcontainerresume {
+        margin-top: 0;
+        height: 60em;
+    }
+
+
+    #profilePic {
+        display: none;
+    }
+
+    #detailsContact {
+        margin-top: 1.5em;
+        padding-left: 1em;
+    }
+
+    #details {
+        margin-top: 1em;
+    }
+
+    #profilePicMobile img {
+        display: inline-block;
+        margin-left: 2em;
+        height: 10%;
+        border-radius: 50%;
+    }
+
+    #proficiencies {
+        margin-left: -5em;
+    }
+    #stars {
+        width: 40%;
+        font-size: .55em!important;
+    }
+    #stars h4{
+        padding: 0;
+        font-size: 1.7em!important;
+
+    }
+    #languages {
+        width: 50%;
+        font-size: .56em!important;
+    }
+
+    #languages h4 {
+        font-size: 1.7em;
+    }
+
+    .backcontainer {
+        padding: 0;
+    }
+
+}
+
