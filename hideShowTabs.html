@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="#">
+</head>
+<body>
+<div class="container">
+    <header>
+    </header>
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#YOURFIRSTDIVIDHERE" id="TABONEIDHERE" role="tab">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class ="nav-link" data-toggle="tab" href="#YOURSECONDDIVIDHERE" id="TABTWOIDHERE" role="tab">Proficiencies</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="YOURFIRSTDIVIDHERE" class="tab-pane active" role="tabpanel">
+                    Panel ONE ONE ONE stuff here blah blah blah
+                <div id="YOURSECONDDIVIDHERE" class="tab-pane" role="tabpanel">
+                        Panel TWO TWO TWO stuff here blah blah blah
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+<footer></footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+
+
+        $("#profile a").click(function(){
+            $("#proficiencies").hide();
+            $("#details").show();
+
+
+
+            $('#profile a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+
+            $('#profC a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+
+
+        });
+    });
+</script>
+</body>
+</html>
