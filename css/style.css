@@ -1,7 +1,27 @@
 
-@import url('https://fonts.googleapis.com/css?family=Macondo');
+/*@import url('https://fonts.googleapis.com/css?family=Macondo');*/
+/*@import url('https://fonts.googleapis.com/css?family=Slabo+27px');*/
+/*@import url('https://fonts.googleapis.com/css?family=Indie+Flower');*/
+/*@import url('https://fonts.googleapis.com/css?family=Comfortaa');*/
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Comfortaa');
 body {
     background-color: #E4F1D8;
+}
+h2 {
+    font-family: 'Comfortaa';
+}
+
+/*.mainnav {*/
+    /*position: fixed;*/
+/*}*/
+.topcontainer {
+    position: relative;
+    overflow: hidden;
+    height: 50vw;
+}
+
+.bodyWrapper {
+
 }
 
 .bodyWrapper::after {
@@ -15,6 +35,13 @@ body {
     position: absolute;
     z-index: -1;
     max-width: 1700px;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
 }
 
 ul.nav li a:hover, ul.nav li a:active {
@@ -23,7 +50,9 @@ ul.nav li a:hover, ul.nav li a:active {
 
 ul.nav li a {
     color: #000 !important;
-    font-size: 1.5em;
+    font-size: 1.5vw;
+    font-family: 'Comfortaa';
+
 }
 
 .navbar .nav > li > a {
@@ -31,51 +60,43 @@ ul.nav li a {
 }
 
 #fog {
-    margin-top: 5em;
+    margin-top: 3vw;
     background-color: #fff;
     background: -webkit-linear-gradient(left,rgba(255,255,255,.2),rgba(255,255,255,.8)); /*Safari 5.1-6*/
     background: -o-linear-gradient(right,rgba(255,255,255,.2),rgba(255,255,255,.8)); /*Opera 11.1-12*/
     background: -moz-linear-gradient(right,rgba(255,255,255,.2),rgba(255,255,255,.8)); /*Fx 3.6-15*/
     background: linear-gradient(to right, rgba(255,255,255,.2), rgba(255,255,255,.8));
-    height: 25em;
+    height: 27vw;
     border-radius: 30%;
-
-
 }
 
 #insidefog {
-    padding-top: 8em;
+    padding-top: 1.5vw;
 }
 
-#inspire {
-    font-family: 'Macondo';
-    font-size: 2em;
-    padding-left: 2em;
+
+.inspire {
+    width: 120%;
+    font-family: 'Architects Daughter';
+    font-size: 2.7vw;
+    font-weight: 200;
+    padding-left: 4vw;
+    line-height: 170%;
 }
-#thumbnails{
-    background-color: #EEEDF3;
-    margin-top: .5%;
-    height: 6.5em;
-    margin-left: 9%;
-    margin-right: 8%;
+
+#portfolioSection {
+    background-color: #83897E;
+    box-shadow: 0 0 2vw 1vw #4f544a;
 }
-#thumbnails img {
-    object-fit: contain;
-    height: 6em;
-    margin: .15em .2em .15em .2em;
-}
+
+
 #backcontainerportfolio {
-    background-color: #EEEDF3;
+    /*background-color: #EEEDF3;*/
     margin-top: 1%;
     height: 39.5em;
     width: 75em;
 }
-iframe {
-    object-fit: contain;
-    height: 39.5em;
-    width: 100%;
 
-}
 .backcontainer {
     background-color: #EEEDF3;
     padding-left: 18%;
@@ -90,6 +111,7 @@ h3 a {
 }
 
 .backcontainerresume {
+    margin: 5% 15% 5% 15%;
     background-color: #EEEDF3;
     margin-top: 5%;
     height: 40em;
@@ -133,7 +155,7 @@ i {
 
 #profCrow {
 
-    margin-top: 5%;
+    /*margin-top: 5%;*/
     margin-left: 25%;
     font-size: 1.3em;
 }
