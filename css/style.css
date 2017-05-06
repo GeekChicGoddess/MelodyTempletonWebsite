@@ -13,13 +13,14 @@ body {
 #topcontainer {
     position: relative;
     overflow: hidden;
-    height: 50vw;
-    min-height: 600px;
+    height: 45vw;
+    min-height: 550px;
 }
 
 .bodyWrapper::after {
     content: "";
     background: url(../img/mud_maid.jpg);
+    background-position: 6%;
     opacity: 0.5;
     top: 0;
     left: 0;
