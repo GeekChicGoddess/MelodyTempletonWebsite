@@ -46,9 +46,14 @@
     </div>
     <div id="backcontainerportfolio" class="container">
         <div class="fairyImages">
-            <div id="weatherDiv">
+            <div id="weatherDiv" class="fairywrapper">
                 <p id="weatherBanner" class="fairyBanner">Weather/Map API</p>
-               <div> <div id="test" class="test"></div> <img id="weather" class="thumbnails" src="img/weather.png">
+               <div> <div id="weatherSparkle" class="sparkle"></div> <img id="weather" class="thumbnails" src="img/weather.png">
+               </div>
+            </div>
+            <div id="SimonDiv" class="fairyWrapper">
+                <p id="simonBanner" class="fairyBanner">Simple Simon</p>
+               <div> <div id="simonSparkle" class="sparkle"></div> <img id="simon" class="thumbnails" src="img/simon.png">
                </div>
             </div>
         </div>
@@ -230,72 +235,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script src="js/js.js"></script>
 <script>
-    var widthGrowAmount = 100;
-    var heightGrowAmount = 50;
 
-    function stopTheAnimation (){
-        $(".fairyImages img").css("animation", "");
-    }
 
-    function grow(id){
-        var sparkleGrow = setInterval(function(){
-            if(widthGrowAmount<1700) {
-                widthGrowAmount++;
-                heightGrowAmount++;
-                console.log('setInterval() executed, ' + widthGrowAmount);
-                $(id).css({
-                    "width": widthGrowAmount + 100+ "px",
-                    "height": heightGrowAmount + 100 + "px"
-                });
-            }
-            else{ clearInterval(sparkleGrow); }
-        },5);
-    }
 
-    function shiftToTopLeft (id){
-        $(id).css({
-            "top": "0",
-            "left": "0",
-            "position" :"fixed"
-        });
-    }
-
-    function removeTransition(id) {
-            $(id).css("transition", "all 0s ease-in");
-    }
-    function addBackTransition(id) {
-        var transitionBack = setTimeout(function(){
-            $(id).css("transition", "all 1s ease-in");
-        }, 1000);
-    }
-
-    function moveLeft(id) {
-        var marginMove = setTimeout(function(){
-            $(id).css("margin-left", "20%");
-
-        }, 1500);
-    }
-
-    function gotToProjectPage (href){
-        var newPage = setTimeout(function(){
-            window.location.href = href;
-        }, 5000);
-    }
-
-    $("#weather").click(function(){
-        $("#test").css("display", "block");
-        stopTheAnimation();
-        shiftToTopLeft("#test");
-        shiftToTopLeft("#weather");
-        removeTransition("#test");
-        removeTransition("#weather");
-        grow("#test");
-        grow("#weather");
-        addBackTransition("#test");
-        moveLeft("#test");
-//        https://geekchicgoddess.github.io/WeatherPredictionAPI/
-         gotToProjectPage('https://geekchicgoddess.github.io/WeatherPredictionAPI/');
-    });
 
 </script>
 </body>

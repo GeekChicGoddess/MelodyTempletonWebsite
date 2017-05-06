@@ -99,12 +99,11 @@ ul.nav li a {
 .thumbnails     {
     height: 6vw;
     width: auto;
-    transition: all .7s ease-in;
+    max-height: 900px;
+    z-index: 100;
 }
 
-#weather {
-    max-height: 900px;
-}
+
 .fairyBanner {
     margin-left: 5vw;
 }
@@ -113,14 +112,14 @@ ul.nav li a {
 
 }
 
-#weatherBanner{
+#fairyBanner{
     color: white;
     visibility: hidden;
     position: relative;
     transition: all 2s ease-in;
 }
 
-#weatherDiv {
+#wDiv {
     height: 6vw;
     width: 6vw;
     /*background-color: white;*/
@@ -140,36 +139,19 @@ ul.nav li a {
     /*position: relative;*/
 }
 
-.test {
+.sparkle {
     position: absolute;
     height: 6vw;
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 20%;
-    transition: all .7s ease-in;
-
-}
-
-#test {
-    background-image: url("../img/firstgiphy.gif");
+    transition: margin-left 1.2s ease-in;
+    background-image: url("../img/yellowSparkle.gif");
     margin-left: 0px;
-    z-index: 100;
     background-size: contain;
     display: none;
     max-height: 900px;
-
-}
-
-#test6 {
-    transition: all 2s ease-in;
-    background-color: #EBECE9;
-    background-size: 100%;
-    display: none;
-    height: 100px;
-    width: 100px;
-    float: left;
-    /*z-index: 5;*/
-
+    z-index: 200;
 }
 
 .backcontainer {
@@ -179,9 +161,6 @@ ul.nav li a {
 
 h3 a {
     margin-left: -35%;
-}
-#resumeSection {
-    /*height: 10vw!important;*/
 }
 
 #resume {
