@@ -6,15 +6,20 @@
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Comfortaa');
 body {
     background-color: #E4F1D8;
+    max-width: 1700px;
+    margin-bottom: 0;
 }
 h2 {
     font-family: 'Comfortaa';
+    margin-right: 15vw;
+    text-shadow: 1px 1px 2px #000000;
+    font-size: 2.5vw;
 }
 
 /*.mainnav {*/
     /*position: fixed;*/
 /*}*/
-.topcontainer {
+#topcontainer {
     position: relative;
     overflow: hidden;
     height: 50vw;
@@ -39,11 +44,6 @@ h2 {
     overflow: hidden;
 }
 
-.fixed {
-    position: fixed;
-    top: 0;
-}
-
 ul.nav li a:hover, ul.nav li a:active {
     color: #fff !important;
 }
@@ -52,6 +52,8 @@ ul.nav li a {
     color: #000 !important;
     font-size: 1.5vw;
     font-family: 'Comfortaa';
+    text-shadow: .5px .5px 1px #000000;
+    font-size: 1.5vw;
 
 }
 
@@ -60,7 +62,7 @@ ul.nav li a {
 }
 
 #fog {
-    margin-top: 3vw;
+    margin-top: 4.5vw;
     background-color: #fff;
     background: -webkit-linear-gradient(left,rgba(255,255,255,.2),rgba(255,255,255,.8)); /*Safari 5.1-6*/
     background: -o-linear-gradient(right,rgba(255,255,255,.2),rgba(255,255,255,.8)); /*Opera 11.1-12*/
@@ -85,16 +87,89 @@ ul.nav li a {
 }
 
 #portfolioSection {
-    background-color: #83897E;
     box-shadow: 0 0 2vw 1vw #4f544a;
+    height: 50vw;
+    /*position: relative;*/
 }
 
-
 #backcontainerportfolio {
-    /*background-color: #EEEDF3;*/
-    margin-top: 1%;
-    height: 39.5em;
-    width: 75em;
+    /*position: absolute;*/
+}
+
+.thumbnails     {
+    height: 6vw;
+    width: auto;
+    transition: all .7s ease-in;
+}
+
+#weather {
+    max-height: 900px;
+}
+.fairyBanner {
+    margin-left: 5vw;
+}
+
+.fairyImages {
+
+}
+
+#weatherBanner{
+    color: white;
+    visibility: hidden;
+    position: relative;
+    transition: all 2s ease-in;
+}
+
+#weatherDiv {
+    height: 6vw;
+    width: 6vw;
+    /*background-color: white;*/
+    /*position: relative;*/
+}
+
+.fairyImages img {
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    50% {transform: rotate3d(0,1,0,360deg);
+    }}
+
+
+#starDivContainer {
+    /*position: relative;*/
+}
+
+.test {
+    position: absolute;
+    height: 6vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 20%;
+    transition: all .7s ease-in;
+
+}
+
+#test {
+    background-image: url("../img/firstgiphy.gif");
+    margin-left: 0px;
+    z-index: 100;
+    background-size: contain;
+    display: none;
+    max-height: 900px;
+
+}
+
+#test6 {
+    transition: all 2s ease-in;
+    background-color: #EBECE9;
+    background-size: 100%;
+    display: none;
+    height: 100px;
+    width: 100px;
+    float: left;
+    /*z-index: 5;*/
+
 }
 
 .backcontainer {
@@ -105,16 +180,20 @@ ul.nav li a {
 h3 a {
     margin-left: -35%;
 }
+#resumeSection {
+    /*height: 10vw!important;*/
+}
 
 #resume {
     font-family: Calibri;
 }
 
 .backcontainerresume {
-    margin: 5% 15% 5% 15%;
+    width: 80%;
+    height: 40vw;
+    margin-left: 10%;
+    margin-top: 4%;
     background-color: #EEEDF3;
-    margin-top: 5%;
-    height: 40em;
 }
 
 #details {
@@ -154,8 +233,7 @@ i {
 }
 
 #profCrow {
-
-    /*margin-top: 5%;*/
+    margin-top: 5%;
     margin-left: 25%;
     font-size: 1.3em;
 }

@@ -12,6 +12,17 @@ $(document).ready(function(){
 
     });
 
+
+    // $("#weather").hover(function(){
+    //     // $("#weatherBanner").css({
+    //     //      'visibility' : 'show',
+    //     //     'z-index' : '2'
+    //     // });
+    // $("#weatherBanner").css("visibility", "show");
+    //
+    //
+    // });
+
     $('#profile a').click(function (e) {
         e.preventDefault();
         $(this).tab('show');
