@@ -9,24 +9,12 @@ body {
     max-width: 1700px;
     margin-bottom: 0;
 }
-h2 {
-    font-family: 'Comfortaa';
-    margin-right: 15vw;
-    text-shadow: 1px 1px 2px #000000;
-    font-size: 2.5vw;
-}
 
-/*.mainnav {*/
-    /*position: fixed;*/
-/*}*/
 #topcontainer {
     position: relative;
     overflow: hidden;
     height: 50vw;
-}
-
-.bodyWrapper {
-
+    min-height: 600px;
 }
 
 .bodyWrapper::after {
@@ -53,12 +41,19 @@ ul.nav li a {
     font-size: 1.5vw;
     font-family: 'Comfortaa';
     text-shadow: .5px .5px 1px #000000;
-    font-size: 1.5vw;
+    font-size: 2vw;
 
 }
 
 .navbar .nav > li > a {
     line-height: 100px;
+}
+
+h2 {
+    font-family: 'Comfortaa';
+    margin-right: 15vw;
+    text-shadow: 1px 1px 2px #000000;
+    font-size: 2.5vw;
 }
 
 #fog {
@@ -70,6 +65,7 @@ ul.nav li a {
     background: linear-gradient(to right, rgba(255,255,255,.2), rgba(255,255,255,.8));
     height: 27vw;
     border-radius: 30%;
+    min-height: 225px;
 }
 
 #insidefog {
@@ -86,6 +82,9 @@ ul.nav li a {
     line-height: 170%;
 }
 
+/*PORTFOLIO SECTIONAL -----------------------------------------------------------------------------------*/
+
+
 #portfolioSection {
     box-shadow: 0 0 2vw 1vw #4f544a;
     height: 50vw;
@@ -101,6 +100,7 @@ ul.nav li a {
     width: auto;
     max-height: 900px;
     z-index: 100;
+    cursor: url(../img/wandBlack.png), pointer;
 }
 
 
@@ -108,9 +108,6 @@ ul.nav li a {
     margin-left: 5vw;
 }
 
-.fairyImages {
-
-}
 
 #fairyBanner{
     color: white;
@@ -153,14 +150,12 @@ ul.nav li a {
     max-height: 900px;
     z-index: 200;
 }
+/*RESUME SECTION ----------------------------------------------------------------------------------------------*/
 
-.backcontainer {
-    background-color: #EEEDF3;
-    padding-left: 18%;
-}
-
-h3 a {
-    margin-left: -35%;
+#resumeSection {
+    overflow: hidden;
+    margin-bottom: 5%;
+    margin-top: 2%;
 }
 
 #resume {
@@ -222,27 +217,43 @@ i {
 
 }
 
-#startable {
+#starTable {
     width: 80%;
 }
 
 @media screen and (max-width: 760px) {
+
+    .bodyWrapper::after {
+        background-size: cover;
+    }
 
     .mainnav {
         display: block!important;
         text-align: center;
     }
 
-    .mainnav li {
-
-        font-size: .6em;
+    h2 {
+        font-size: 6vw;
+        margin-left: 10%;
     }
+
+    ul.nav li a {
+        font-size: 3.5vw;
+    }
+
     #insidefog {
-        padding-top: 2em;
+        padding-top: 3vw;
+    }
+
+    #fog {
+        min-height: 175px;
+    }
+
+    .inspire {
+        width: 100%;
     }
 
     .backcontainerresume {
-        margin-top: 0;
         height: 60em;
     }
 
@@ -294,6 +305,14 @@ i {
 
     #startable {
         font-size: 80%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .inspire {
+        font-size: 3.5vw;
     }
 
 }
