@@ -111,6 +111,13 @@ $(document).ready(function(){
 
 
    // JS FOR RESUME SECTION ________________________________________________________________________________
+
+    $("#contactMe").click(function () {
+        // e.preventDefault();
+        window.open('mailto:Melody@geekchicgoddess.com');
+    })
+
+
     $('#profile a').click(function (e) {
         e.preventDefault();
         $(this).tab('show');
