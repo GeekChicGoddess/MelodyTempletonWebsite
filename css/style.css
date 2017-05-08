@@ -4,6 +4,7 @@
 /*@import url('https://fonts.googleapis.com/css?family=Indie+Flower');*/
 /*@import url('https://fonts.googleapis.com/css?family=Comfortaa');*/
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
 body {
     background-color: #E4F1D8;
     max-width: 1700px;
@@ -96,42 +97,64 @@ h2 {
     /*position: absolute;*/
 }
 
-.thumbnails     {
-    height: 6vw;
-    width: auto;
-    max-height: 900px;
-    z-index: 100;
-    cursor: url(../img/wandBlack.png), pointer;
+.fairyWrapper {
+    display: inline-block;
+}
+
+.fairyImages {
+    width: 15vw;
+    height: auto;
+}
+
+#simonDiv {
+    margin-left: 30vw;
+    margin-top: 3vw;
+}
+
+#tictactoeDiv {
+    margin-left: -10vw;
+    margin-top: 3vw;
 }
 
 
-.fairyBanner {
-    margin-left: 5vw;
+#weatherFairy {
+    float: left;
+    margin-left: 8vw;
+    margin-bottom: -6.5vw;
+}
+#simonFairy {
+    margin-left: -14.5vw;
+    margin-bottom: -6.7vw;
+}
+#tictactoeFairy {
+    margin-left: 8vw;
+    margin-bottom: -6.5vw;
 }
 
-
-#fairyBanner{
-    color: white;
-    visibility: hidden;
-    position: relative;
-    transition: all 2s ease-in;
-}
-
-#wDiv {
-    height: 6vw;
-    width: 6vw;
-    /*background-color: white;*/
-    /*position: relative;*/
-}
-
-.fairyImages img {
-    animation: mymove 5s infinite;
+.thumbnailWrapper {
 }
 
 @keyframes mymove {
     50% {transform: rotate3d(0,1,0,360deg);
     }}
 
+.thumbnails  {
+    height: 6vw;
+    width: auto;
+    max-height: 900px;
+    z-index: 100;
+    cursor: url(../img/wandBlack.png), pointer;
+    animation: mymove 5s infinite;
+}
+
+
+.fairyBanner {
+    color: grey;
+    text-shadow: .5px .5px 0px black;
+    font-family:  'Tangerine';
+    font-size: 2.5vw;
+    margin: 0;
+}
 
 #starDivContainer {
     /*position: relative;*/
@@ -150,6 +173,10 @@ h2 {
     display: none;
     max-height: 900px;
     z-index: 200;
+}
+
+#weatherSparkle {
+    margin-left: -4%;
 }
 /*RESUME SECTION ----------------------------------------------------------------------------------------------*/
 
@@ -229,7 +256,7 @@ i {
     }
 
     .mainnav {
-        display: block!important;
+        display: block !important;
         text-align: center;
     }
 
@@ -254,10 +281,19 @@ i {
         width: 100%;
     }
 
+    /*PORTFOLIO =======================================*/
+
+    .fairyWrapper {
+        display: block;
+        margin: 0;
+    }
+
+
+
+    /*RESUME +++++++++++++=====================================*/
     .backcontainerresume {
         height: 60em;
     }
-
 
     #profilePic {
         display: none;
@@ -282,18 +318,20 @@ i {
     #proficiencies {
         margin-left: -5em;
     }
+
     #stars {
         width: 40%;
-        font-size: .55em!important;
+        font-size: .55em !important;
     }
-    #stars h4{
-        padding: 0;
-        font-size: 1.7em!important;
 
+    #stars h4 {
+        padding: 0;
+        font-size: 1.7em !important;
     }
+
     #languages {
         width: 50%;
-        font-size: .56em!important;
+        font-size: .56em !important;
     }
 
     #languages h4 {
@@ -307,7 +345,6 @@ i {
     #startable {
         font-size: 80%;
     }
-
 }
 
 @media screen and (max-width: 600px) {

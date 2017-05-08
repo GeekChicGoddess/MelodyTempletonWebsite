@@ -20,6 +20,7 @@ $(document).ready(function(){
     var heightGrowAmount = 50;
     var simonPage = "https://geekchicgoddess.github.io/simple-simon/";
     var weatherPage = "https://geekchicgoddess.github.io/WeatherPredictionAPI/";
+    var tictactoePage = "https://geekchicgoddess.github.io/TicTacToe/";
 
     function shiftToTopLeft (id){ // thumbnail and sparkle move (animated) to top left corner before growth begins
         var theElement = $(id);
@@ -29,7 +30,7 @@ $(document).ready(function(){
         $(id).css( "position", "fixed");
 
         var startInCorner = setInterval(function(){
-            if(currentLeft>0 || currentTop>0) {
+            if(currentLeft>0 && currentTop>0) {
                 currentTop-=10;
                 currentLeft-=10;
                 $(id).css({
@@ -37,14 +38,26 @@ $(document).ready(function(){
                     "left": currentLeft
                 });
             }
+            else if (currentLeft>0) {
+                currentLeft -= 10;
+                $(id).css({
+                    "left": currentLeft
+                });
+            }
+            else if (currentTop>0) {
+                currentTop -= 10;
+                $(id).css({
+                    "top": currentTop
+                });
+            }
             else{ clearInterval(startInCorner); }
-        }, 25);
+        }, 35);
     }
 
 
     function grow(id){ // animate the growth of the thumbnail and the sparkle to fill the page
         var sparkleGrowBig = setInterval(function(){
-            if(widthGrowAmount<1700) {
+            if(widthGrowAmount<1800) {
                 widthGrowAmount++;
                 heightGrowAmount++;
                 $(id).css({
@@ -85,6 +98,10 @@ $(document).ready(function(){
 
     $("#simon").click(function(){
         makeTheMagicHappen("#simonSparkle", "#simon", simonPage);
+    });
+
+    $("#tictactoe").click(function(){
+        makeTheMagicHappen("#tictactoeSparkle", "#tictactoe", tictactoePage);
     });
 
 
