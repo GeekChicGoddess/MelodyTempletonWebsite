@@ -112,7 +112,7 @@ h2 {
 }
 
 #tictactoeDiv {
-    margin-left: -10vw;
+
     margin-top: 3vw;
 }
 
@@ -131,8 +131,6 @@ h2 {
     margin-bottom: -6.5vw;
 }
 
-.thumbnailWrapper {
-}
 
 @keyframes mymove {
     50% {transform: rotate3d(0,1,0,360deg);
@@ -154,10 +152,6 @@ h2 {
     font-family:  'Tangerine';
     font-size: 2.5vw;
     margin: 0;
-}
-
-#starDivContainer {
-    /*position: relative;*/
 }
 
 .sparkle {
