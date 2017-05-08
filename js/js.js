@@ -32,26 +32,16 @@ $(document).ready(function(){
         $(id).css( "position", "fixed");
 
         var startInCorner = setInterval(function(){
-            if(currentLeft>0 && currentTop>0) {
+
+            if(currentLeft>0 || currentTop>0) {
                 currentTop-=10;
-                currentLeft-=10;
+                currentLeft-=20;
                 $(id).css({
                     "top": currentTop,
                     "left": currentLeft
                 });
             }
-            else if (currentLeft>0) {
-                currentLeft -= 10;
-                $(id).css({
-                    "left": currentLeft
-                });
-            }
-            else if (currentTop>0) {
-                currentTop -= 10;
-                $(id).css({
-                    "top": currentTop
-                });
-            }
+
             else{ clearInterval(startInCorner); }
         }, 35);
     }
@@ -85,7 +75,10 @@ $(document).ready(function(){
     }
 
     function makeTheMagicHappen (sparkleID, thumbnailID, address) {
-        $(sparkleID).css("display", "block");
+        $(sparkleID).css({
+            "display": "block",
+            "position": "relative"
+        });
         shiftToTopLeft(sparkleID);
         shiftToTopLeft(thumbnailID);
         grow(sparkleID);
