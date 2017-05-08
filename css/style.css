@@ -107,12 +107,21 @@ h2 {
 }
 
 #simonDiv {
-    margin-left: 30vw;
+    width: 20vw;
     margin-top: 3vw;
+    margin-left: 25vw;
+}
+#tictactoeDiv {
+    width: 35vw;
+}
+
+#konamiDiv {
+    width: 25vw;
+    margin-top: 2vw;
+    margin-left: 10vw;
 }
 
 #tictactoeDiv {
-
     margin-top: 3vw;
 }
 

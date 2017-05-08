@@ -21,6 +21,8 @@ $(document).ready(function(){
     var simonPage = "https://geekchicgoddess.github.io/simple-simon/";
     var weatherPage = "https://geekchicgoddess.github.io/WeatherPredictionAPI/";
     var tictactoePage = "https://geekchicgoddess.github.io/TicTacToe/";
+    var konami = "https://geekchicgoddess.github.io/JQueryExercises/";
+    var calculator = "https://geekchicgoddess.github.io/Calculator/";
 
     function shiftToTopLeft (id){ // thumbnail and sparkle move (animated) to top left corner before growth begins
         var theElement = $(id);
@@ -102,6 +104,14 @@ $(document).ready(function(){
 
     $("#tictactoe").click(function(){
         makeTheMagicHappen("#tictactoeSparkle", "#tictactoe", tictactoePage);
+    });
+
+    $("#konami").click(function(){
+        makeTheMagicHappen("#konamiSparkle", "#konami", tictactoePage);
+    });
+
+    $("#calculator").click(function(){
+        makeTheMagicHappen("#calculatorSparkle", "#calculator", tictactoePage);
     });
 
 
