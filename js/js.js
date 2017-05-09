@@ -29,13 +29,16 @@ $(document).ready(function(){
         var elementPosition = theElement.position();
         var currentLeft = elementPosition.left;
         var currentTop = elementPosition.top;
-        $(id).css( "position", "fixed");
+        $(id).css({
+            "position": "fixed",
+            "animation": "none"
+        });
 
         var startInCorner = setInterval(function(){
 
             if(currentLeft>0 || currentTop>0) {
                 currentTop-=10;
-                currentLeft-=20;
+                currentLeft-=10;
                 $(id).css({
                     "top": currentTop,
                     "left": currentLeft
@@ -43,7 +46,7 @@ $(document).ready(function(){
             }
 
             else{ clearInterval(startInCorner); }
-        }, 35);
+        }, 5);
     }
 
 
@@ -53,8 +56,8 @@ $(document).ready(function(){
                 widthGrowAmount++;
                 heightGrowAmount++;
                 $(id).css({
-                    "width": widthGrowAmount + 100+ "px",
-                    "height": heightGrowAmount + 100 + "px"
+                    "width": widthGrowAmount + 500+ "px",
+                    "height": heightGrowAmount + 500 + "px"
                 });
             }
             else{ clearInterval(sparkleGrowBig); }
@@ -65,13 +68,13 @@ $(document).ready(function(){
         var rightMove = setTimeout(function(){
             $(id).css("margin-left", "20%");
 
-        }, 1500);
+        }, 300);
     }
 
     function gotToProjectPage (href){ // load the actual project for the user to interact with
        var projectPageRelocation = setTimeout(function(){
             window.location.href = href;
-        }, 5000);
+        }, 1800);
     }
 
     function makeTheMagicHappen (sparkleID, thumbnailID, address) {
