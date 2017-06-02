@@ -53,8 +53,7 @@ $(document).ready(function(){
     function grow(id){ // animate the growth of the thumbnail and the sparkle to fill the page
         var sparkleGrowBig = setInterval(function(){
             if(widthGrowAmount<1800) {
-                widthGrowAmount++;:wc
-
+                widthGrowAmount++;
                 heightGrowAmount++;
                 $(id).css({
                     "width": widthGrowAmount + 500+ "px",
