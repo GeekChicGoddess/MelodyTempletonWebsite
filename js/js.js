@@ -53,7 +53,8 @@ $(document).ready(function(){
     function grow(id){ // animate the growth of the thumbnail and the sparkle to fill the page
         var sparkleGrowBig = setInterval(function(){
             if(widthGrowAmount<1800) {
-                widthGrowAmount++;
+                widthGrowAmount++;:wc
+
                 heightGrowAmount++;
                 $(id).css({
                     "width": widthGrowAmount + 500+ "px",
@@ -72,21 +73,14 @@ $(document).ready(function(){
     }
 
     function gotToProjectPage (href){ // load the actual project for the user to interact with
-       var projectPageRelocation = setTimeout(function(){
+        var projectPageRelocation = setTimeout(function(){
             window.location.href = href;
         }, 1800);
     }
 
     function makeTheMagicHappen (sparkleID, thumbnailID, address) {
-        $(sparkleID).css({
-            "display": "block",
-            "position": "relative"
-        });
-        shiftToTopLeft(sparkleID);
         shiftToTopLeft(thumbnailID);
-        grow(sparkleID);
         grow(thumbnailID);
-        moveRight(sparkleID);
         gotToProjectPage(address);
     }
 
@@ -113,11 +107,11 @@ $(document).ready(function(){
 
 
 
-   // JS FOR RESUME SECTION ________________________________________________________________________________
+    // JS FOR RESUME SECTION ________________________________________________________________________________
 
     $("#contactMe").click(function () {
         // e.preventDefault();
-        window.open('mailto:Melody@geekchicgoddess.com');
+        window.open('mailto:Melody@melodyatempleton.com');
     })
 
 
