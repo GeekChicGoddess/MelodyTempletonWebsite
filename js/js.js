@@ -16,91 +16,37 @@ $(document).ready(function(){
 
 
     // JS FOR PORTFOLIO SECTION __________________________________________________________________________________
-    var widthGrowAmount = 100;
-    var heightGrowAmount = 50;
+
     var simonPage = "https://geekchicgoddess.github.io/simple-simon/";
     var weatherPage = "https://geekchicgoddess.github.io/WeatherPredictionAPI/";
     var tictactoePage = "https://geekchicgoddess.github.io/TicTacToe/";
     var konamiPage = "https://geekchicgoddess.github.io/JQueryExercises/";
     var calculatorPage = "https://geekchicgoddess.github.io/Calculator/";
 
-    function shiftToTopLeft (id){ // thumbnail and sparkle move (animated) to top left corner before growth begins
-        var theElement = $(id);
-        var elementPosition = theElement.position();
-        var currentLeft = elementPosition.left;
-        var currentTop = elementPosition.top;
-        $(id).css({
-            "position": "fixed",
-            "animation": "none"
-        });
-
-        var startInCorner = setInterval(function(){
-
-            if(currentLeft>0 || currentTop>0) {
-                currentTop-=10;
-                currentLeft-=10;
-                $(id).css({
-                    "top": currentTop,
-                    "left": currentLeft
-                });
-            }
-
-            else{ clearInterval(startInCorner); }
-        }, 5);
-    }
-
-
-    function grow(id){ // animate the growth of the thumbnail and the sparkle to fill the page
-        var sparkleGrowBig = setInterval(function(){
-            if(widthGrowAmount<1800) {
-                widthGrowAmount++;
-                heightGrowAmount++;
-                $(id).css({
-                    "width": widthGrowAmount + 500+ "px",
-                    "height": heightGrowAmount + 500 + "px"
-                });
-            }
-            else{ clearInterval(sparkleGrowBig); }
-        },5);
-    }
-
-    function moveRight(id) { // the sparkle needs to shift right to stay center in the "thumbnail" when it fills the screen
-        var rightMove = setTimeout(function(){
-            $(id).css("margin-left", "20%");
-
-        }, 300);
-    }
 
     function gotToProjectPage (href){ // load the actual project for the user to interact with
-        var projectPageRelocation = setTimeout(function(){
             window.location.href = href;
-        }, 1800);
     }
 
-    function makeTheMagicHappen (sparkleID, thumbnailID, address) {
-        shiftToTopLeft(thumbnailID);
-        grow(thumbnailID);
-        gotToProjectPage(address);
-    }
 
     $("#weather").click(function(){
-        makeTheMagicHappen("#weatherSparkle", "#weather", weatherPage);
+        gotToProjectPage(weatherPage);
     });
 
     $("#simon").click(function(){
-        makeTheMagicHappen("#simonSparkle", "#simon", simonPage);
+        gotToProjectPage(simonPage);
     });
 
     $("#tictactoe").click(function(){
-        makeTheMagicHappen("#tictactoeSparkle", "#tictactoe", tictactoePage);
+        gotToProjectPage(tictactoePage);
     });
 
     $("#konami").click(function(){
-        makeTheMagicHappen("#konamiSparkle", "#konami", konamiPage);
+        gotToProjectPage(konamiPage);
     });
 
     $("#calculator").click(function(){
-        makeTheMagicHappen("#calculatorSparkle", "#calculator", calculatorPage);
+        gotToProjectPage(calculatorPage);
     });
 
 
