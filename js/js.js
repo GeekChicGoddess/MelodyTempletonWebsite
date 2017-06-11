@@ -1,15 +1,15 @@
 /**
  * Created by melodytempleton on 5/4/17.
  */
-$(document).ready(function(){
+$(document).ready(function () {
 
 
     // JS FOR TOP SECTION _____________________________________________________________________________________
-    $(window).scroll(function(){
+    $(window).scroll(function () {
 
         var wScroll = $(this).scrollTop();
         $("#fog").css({
-            'transform' : 'translate(0px, '+wScroll /2.5 +'%)'
+            'transform': 'translate(0px, ' + wScroll / 2.5 + '%)'
         });
 
     });
@@ -24,40 +24,38 @@ $(document).ready(function(){
     var calculatorPage = "https://geekchicgoddess.github.io/Calculator/";
 
 
-    function gotToProjectPage (href){ // load the actual project for the user to interact with
-            window.location.href = href;
+    function gotToProjectPage(href) { // load the actual project for the user to interact with
+        window.location.href = href;
     }
 
 
-    $("#weather").click(function(){
+    $("#weather").click(function () {
         gotToProjectPage(weatherPage);
     });
 
-    $("#simon").click(function(){
+    $("#simon").click(function () {
         gotToProjectPage(simonPage);
     });
 
-    $("#tictactoe").click(function(){
+    $("#tictactoe").click(function () {
         gotToProjectPage(tictactoePage);
     });
 
-    $("#konami").click(function(){
+    $("#konami").click(function () {
         gotToProjectPage(konamiPage);
     });
 
-    $("#calculator").click(function(){
+    $("#calculator").click(function () {
         gotToProjectPage(calculatorPage);
     });
-
-
 
 
     // JS FOR RESUME SECTION ________________________________________________________________________________
 
     $("#contactMe").click(function () {
-        // e.preventDefault();
+        e.preventDefault();
         window.open('mailto:Melody@melodyatempleton.com');
-    })
+    });
 
 
     $('#profile a').click(function (e) {
