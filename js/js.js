@@ -22,7 +22,7 @@ $(document).ready(function () {
     var tictactoePage = "https://geekchicgoddess.github.io/TicTacToe/";
     var konamiPage = "https://geekchicgoddess.github.io/JQueryExercises/";
     var calculatorPage = "https://geekchicgoddess.github.io/Calculator/";
-    var edsplorersPage = "edsplorers.com";
+    var edsplorersPage = "https://edsplorers.com";
 
 
     function gotToProjectPage(href) { // load the actual project for the user to interact with
@@ -53,6 +53,19 @@ $(document).ready(function () {
     $("#edsplorers").click(function () {
         gotToProjectPage(edsplorersPage);
     });
+
+    (function() {
+
+        $(window).resize(function resize(){
+            if ($(window).width() < 992) {
+                $("#allFairyDivsWrapper").removeClass();
+            }
+            if ($(window).width() > 992) {
+                $("#allFairyDivsWrapper").addClass("row");
+            }
+
+        }).trigger('resize');
+    })();
 
     // JS FOR RESUME SECTION ________________________________________________________________________________
 

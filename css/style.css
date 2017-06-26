@@ -230,7 +230,7 @@ i {
     font-size: 75%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
 
     .mainnav {
         margin-top: 1vw;
@@ -289,7 +289,7 @@ i {
     }
 
     #simonDiv {
-        margin-top: 5vw;
+        margin-top: 3.5vw;
         margin-left: 55vw;
     }
     #tictactoeDiv {
@@ -302,18 +302,18 @@ i {
     }
 
     #konamiDiv {
-        margin-top: 26vw;
-        margin-left: 60vw;
+        margin-top: 22vw;
+        margin-left: 40vw;
     }
 
     #calculatorDiv {
-        margin-top: 35vw;
-        margin-left: 17vw;
+        margin-top: 38vw;
+        margin-left: 1vw;
     }
 
     #edsplorersDiv {
-        margin-top: 35vw;
-        margin-left: 28vw;
+        margin-top: 40vw;
+        margin-left: 55vw;
     }
 
     #weatherFairy {
@@ -333,18 +333,18 @@ i {
     }
 
     #konamiFairy {
-        margin-left: 10vw;
-        margin-bottom: -6.8vw;
+        margin-left: 13vw;
+        margin-bottom: -6.2vw;
     }
 
     #calculatorFairy {
-        margin-left: 5vw;
+        margin-left: 10vw;
         margin-bottom: -3.8vw;
     }
 
     #edsplorersFairy {
-        margin-left: 25vw;
-        margin-bottom: -3.8vw;
+        margin-left: 13.5vw;
+        margin-bottom: -8vw;
     }
   /*RESUME SECTION =================================================================*/
 
