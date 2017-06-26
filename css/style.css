@@ -311,12 +311,12 @@ i {
         margin-left: 1vw;
     }
 
-    #edsplorersDiv {
+    #weatherDiv {
         margin-top: 40vw;
         margin-left: 55vw;
     }
 
-    #weatherFairy {
+    #edsplorersFairy {
         float: left;
         margin-left: 15vw;
         margin-bottom: -6.5vw;
@@ -342,7 +342,7 @@ i {
         margin-bottom: -3.8vw;
     }
 
-    #edsplorersFairy {
+    #weatherFairy {
         margin-left: 13.5vw;
         margin-bottom: -8vw;
     }
