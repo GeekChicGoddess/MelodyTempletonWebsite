@@ -308,7 +308,12 @@ i {
 
     #calculatorDiv {
         margin-top: 35vw;
-        margin-left: 22vw;
+        margin-left: 17vw;
+    }
+
+    #edsplorersDiv {
+        margin-top: 35vw;
+        margin-left: 28vw;
     }
 
     #weatherFairy {
