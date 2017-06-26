@@ -333,7 +333,12 @@ i {
     }
 
     #calculatorFairy {
-        margin-left: 10vw;
+        margin-left: 5vw;
+        margin-bottom: -3.8vw;
+    }
+
+    #edsplorersFairy {
+        margin-left: 25vw;
         margin-bottom: -3.8vw;
     }
   /*RESUME SECTION =================================================================*/
