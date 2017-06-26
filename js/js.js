@@ -22,6 +22,7 @@ $(document).ready(function () {
     var tictactoePage = "https://geekchicgoddess.github.io/TicTacToe/";
     var konamiPage = "https://geekchicgoddess.github.io/JQueryExercises/";
     var calculatorPage = "https://geekchicgoddess.github.io/Calculator/";
+    var edsplorersPage = "edsplorers.com";
 
 
     function gotToProjectPage(href) { // load the actual project for the user to interact with
@@ -49,6 +50,9 @@ $(document).ready(function () {
         gotToProjectPage(calculatorPage);
     });
 
+    $("#edsplorers").click(function () {
+        gotToProjectPage(edsplorersPage);
+    });
 
     // JS FOR RESUME SECTION ________________________________________________________________________________
 
