@@ -180,6 +180,10 @@ h2 {
     border-radius: 50%;
 }
 
+#profilePicMobile{
+    margin-top: 10%;
+}
+
 #profilePicMobile img {
     display: inline-block;
     margin-left: 2em;
