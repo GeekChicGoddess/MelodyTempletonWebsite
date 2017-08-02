@@ -17,6 +17,7 @@ $(document).ready(function () {
 
     // JS FOR PORTFOLIO SECTION __________________________________________________________________________________
 
+    var furBaby = "http://furbabyfinder.site/";
     var simonPage = "https://geekchicgoddess.github.io/simple-simon/";
     var weatherPage = "https://geekchicgoddess.github.io/WeatherPredictionAPI/";
     var tictactoePage = "https://geekchicgoddess.github.io/TicTacToe/";
@@ -30,6 +31,9 @@ $(document).ready(function () {
     }
 
 
+    $("#furBaby").click(function () {
+        gotToProjectPage(furBaby);
+    });
     $("#weather").click(function () {
         gotToProjectPage(weatherPage);
     });
